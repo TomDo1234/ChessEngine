@@ -16,17 +16,16 @@ class Piece {
 int main(int argc, char const *argv[])
 {
     /* code */
-    std::array<int,2> pos1 = {0,2}, pos2 = {1,2} , pos3 = {2,2} , pos4 = {3,2}, pos5 = {4,2}, pos6 = {5,2} , pos7 = {6,2} , pos8 = {7,2};
 
-    Piece bp1(pos1,1,'P');
-    Piece bp2(pos2,1,'P');
-    Piece bp3(pos3,1,'P');
-    Piece bp4(pos4,1,'P');
-    Piece bp5(pos5,1,'P');
-    Piece bp6(pos6,1,'P');
-    Piece bp7(pos7,1,'P');
-    Piece bp8(pos8,1,'P');
+    Piece bp1({0,2},1,'P');
+    Piece bp2({1,2},1,'P');
+    Piece bp3({2,2},1,'P');
+    Piece bp4({3,2},1,'P');
+    Piece bp5({4,2},1,'P');
+    Piece bp6({5,2},1,'P');
+    Piece bp7({6,2},1,'P');
+    Piece bp8({7,2},1,'P');
 
-    std::cout << bp1.name << std::endl;
+    std::cout << bp1.boardpos[1] << std::endl;
     return 0;
 }
