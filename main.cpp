@@ -1,5 +1,6 @@
 #include <iostream>
 #include "piece.h"
+#include <array>
 
 using namespace PieceNS;
 
@@ -25,6 +26,19 @@ int main(int argc, char const *argv[])
     Piece wp6({5,6},0,'P');
     Piece wp7({6,6},0,'P');
     Piece wp8({7,6},0,'P');
+
+    Piece X({-1,-1},0,' ');
+
+    std::array<std::array<Piece,8>, 8> Board = 
+    {{{X,X,X,X,X,X,X,X},
+    {bp1,bp2,bp3,bp4,bp5,bp6,bp7,bp8},
+    {X,X,X,X,X,X,X,X},
+    {X,X,X,X,X,X,X,X},
+    {X,X,X,X,X,X,X,X},
+    {X,X,X,X,X,X,X,X},
+    {wp1,wp2,wp3,wp4,wp5,wp6,wp7,wp8},
+    {X,X,X,X,X,X,X,X}}};
+
 
     std::cout << bp1.boardpos[1] << std::endl;
     return 0;
