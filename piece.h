@@ -1,16 +1,17 @@
+#include <array>
+
+
 namespace PieceNS
 {
     class Piece {
         public : 
-            int boardpos[2];
+            std::array<int,2> boardpos;
             short team;
             char name;
-            Piece(int boardpos[2], short team, char name) {
-                boardpos = boardpos;
-                team = team;
-                name = name;
+            Piece(std::array<int,2> a, int b, char c) {
+                boardpos = a;
+                team = b;
+                name = c;
             }
     };
-
-    Piece bp1;
 }
